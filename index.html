@@ -19,14 +19,13 @@
       content="Transform your body at Mahad's best gym with certified trainers, premium machines, and a clean disciplined atmosphere."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="assets/hero-rope.jpg" />
+    <meta property="og:image" content="assets/hero-desktop.webp" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="preload" as="image" href="assets/hero-rope.jpg" />
     <link rel="stylesheet" href="styles.css" />
     <script type="application/ld+json">
       {
@@ -35,9 +34,9 @@
         "name": "Utekar Fitness Club Mahad",
         "telephone": "+91 9890291143",
         "image": [
-          "assets/hero-rope.jpg",
-          "assets/gym-interior.jpg",
-          "assets/machine-quality.jpg"
+          "assets/hero-desktop.webp",
+          "assets/gym-interior.webp",
+          "assets/machine-quality.webp"
         ],
         "priceRange": "INR",
         "address": {
@@ -148,7 +147,17 @@
     <main>
       <section class="hero" id="home">
         <div class="hero__media">
-          <img src="assets/hero-rope.jpg" alt="Athlete training with battle ropes in a premium gym" />
+          <picture>
+            <source media="(max-width: 979px)" srcset="assets/hero-mobile.webp" type="image/webp" />
+            <img
+              src="assets/hero-desktop.webp"
+              alt="Athlete training with battle ropes in a premium gym"
+              width="1400"
+              height="2100"
+              fetchpriority="high"
+              decoding="async"
+            />
+          </picture>
           <div class="hero__overlay"></div>
         </div>
 
@@ -205,7 +214,13 @@
             <div class="hero-side reveal">
               <div class="glass hero-panel">
                 <div class="hero-panel__main">
-                  <img src="assets/gym-interior.jpg" alt="Premium gym interior with modern machines" />
+                  <img
+                    src="assets/gym-interior.webp"
+                    alt="Premium gym interior with modern machines"
+                    width="1100"
+                    height="660"
+                    decoding="async"
+                  />
                   <div class="hero-panel__caption">
                     <span>Premium Floor</span>
                     <h2>High-end interior with serious training energy</h2>
@@ -245,10 +260,24 @@
             <div class="about-media reveal">
               <div class="media-stack">
                 <figure class="media-stack__main">
-                  <img src="assets/gym-interior.jpg" alt="Spacious gym floor with equipment and cardio area" />
+                  <img
+                    src="assets/gym-interior.webp"
+                    alt="Spacious gym floor with equipment and cardio area"
+                    width="1100"
+                    height="660"
+                    loading="lazy"
+                    decoding="async"
+                  />
                 </figure>
                 <figure class="media-stack__float glass">
-                  <img src="assets/women-strength.jpg" alt="Woman performing strength training inside a gym" />
+                  <img
+                    src="assets/women-strength.webp"
+                    alt="Woman performing strength training inside a gym"
+                    width="800"
+                    height="480"
+                    loading="lazy"
+                    decoding="async"
+                  />
                   <figcaption>Separate space for men and women with a clean, focused atmosphere.</figcaption>
                 </figure>
               </div>
@@ -430,7 +459,14 @@
 
             <div class="why-visual reveal">
               <figure class="why-visual__frame">
-                <img src="assets/strength-portrait.jpg" alt="Athlete posing between strength machines inside the gym" />
+                <img
+                  src="assets/strength-portrait.webp"
+                  alt="Athlete posing between strength machines inside the gym"
+                  width="900"
+                  height="600"
+                  loading="lazy"
+                  decoding="async"
+                />
                 <figcaption class="glass">
                   <strong>Mahad member promise</strong>
                   <span>Walk in for the energy. Stay for the environment, support, and visible progress.</span>
@@ -511,27 +547,69 @@
 
           <div class="gallery-grid">
             <figure class="gallery-card gallery-card--tall reveal">
-              <img src="assets/hero-rope.jpg" alt="Battle rope workout inside a dark gym" />
+              <img
+                src="assets/hero-mobile.webp"
+                alt="Battle rope workout inside a dark gym"
+                width="720"
+                height="1080"
+                loading="lazy"
+                decoding="async"
+              />
               <figcaption>HIIT and conditioning intensity</figcaption>
             </figure>
             <figure class="gallery-card gallery-card--wide reveal">
-              <img src="assets/gym-interior.jpg" alt="Spacious premium gym interior" />
+              <img
+                src="assets/gym-interior.webp"
+                alt="Spacious premium gym interior"
+                width="1100"
+                height="660"
+                loading="lazy"
+                decoding="async"
+              />
               <figcaption>Premium interior and clean flow</figcaption>
             </figure>
             <figure class="gallery-card reveal">
-              <img src="assets/machine-quality.jpg" alt="Gym member using high-quality machine setup" />
+              <img
+                src="assets/machine-quality.webp"
+                alt="Gym member using high-quality machine setup"
+                width="900"
+                height="1350"
+                loading="lazy"
+                decoding="async"
+              />
               <figcaption>Quality machines that members talk about</figcaption>
             </figure>
             <figure class="gallery-card reveal">
-              <img src="assets/women-strength.jpg" alt="Strength training setup for women in a gym" />
+              <img
+                src="assets/women-strength.webp"
+                alt="Strength training setup for women in a gym"
+                width="800"
+                height="480"
+                loading="lazy"
+                decoding="async"
+              />
               <figcaption>Separate and focused training feel</figcaption>
             </figure>
             <figure class="gallery-card reveal">
-              <img src="assets/strength-portrait.jpg" alt="Athlete framed by strength machines" />
+              <img
+                src="assets/strength-portrait.webp"
+                alt="Athlete framed by strength machines"
+                width="900"
+                height="600"
+                loading="lazy"
+                decoding="async"
+              />
               <figcaption>Disciplined and results-driven atmosphere</figcaption>
             </figure>
             <figure class="gallery-card gallery-card--wide reveal">
-              <img src="assets/bodybuilder-stage.jpg" alt="Bodybuilder posing inside a gym under dramatic light" />
+              <img
+                src="assets/bodybuilder-stage.webp"
+                alt="Bodybuilder posing inside a gym under dramatic light"
+                width="1100"
+                height="1837"
+                loading="lazy"
+                decoding="async"
+              />
               <figcaption>Bold visual identity with premium dark styling</figcaption>
             </figure>
           </div>
